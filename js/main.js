@@ -11,14 +11,16 @@ let started = false;
  */
 $(".btn").click(function() {
 
-    let userChosenColour = $(this).attr("id");
+    if (started) {
+        let userChosenColour = $(this).attr("id");
 
-    userClickedPattern.push(userChosenColour);
-
-    playSound(userChosenColour);
-    animatePress(userChosenColour);
-
-    checkAnswer();
+        userClickedPattern.push(userChosenColour);
+    
+        playSound(userChosenColour);
+        animatePress(userChosenColour);
+    
+        checkAnswer();
+    }
 });
 
 /**
