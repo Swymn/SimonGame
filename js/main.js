@@ -40,7 +40,7 @@ $(document).keypress(function() {
  * @param {*} name 
  */
 function playSound(name) {
-    new Audio("../sounds/" + name + ".mp3").play();
+    new Audio("sounds/" + name + ".mp3").play();
 }
 
 /**
